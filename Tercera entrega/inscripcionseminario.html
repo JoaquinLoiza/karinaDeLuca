@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Karina De Luca</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shorcut icon" type="image/x-icon" href="image/icono.png">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor logo-nav">
+			<a href="index.html">
+                <img class="logo" src="image/logo.png" alt="logo">
+            </a>
+            <span class="desplegable">
+                <img src="image/desplegable.png" alt="#" >
+            </span>
+            <nav class="barnav">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="precios.html">PRECIOS</a></li>
+                    <li><a href="contactos.html">CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="contenido">
+        <div class="contenedor">
+        <div class="seminariotandil">
+            <h1>~ SEMINARIO DE FOTOGRAFIA DE BODAS ~</h1>
+            <h2>¡ultimas plazas!</h2>
+            <h2>Tandil viernes 29/11 y sabado 30/11</h2>
+        </div>
+        <div class="infoseminario">
+            <ul>
+                <li>
+                    Este curso va dirigido a fotografos profecionales. También pueden participar aficionados avanzados
+                    con un buen conocimiento de las tecnicas basicas.
+                </li>
+                <li>
+                    La carga horaria de este curso será de 8hs diarias, en dos bloques de 4hs con un corte
+                    para poder almorzar y descanzar un rato.
+                </li>
+                <li>
+                    Habrá mucha práctica que es donde realmente se aprende, flash fuera de cámara, luz natural, luz continua, mucho flash y mucha psicología fotográfica.
+                </li>
+            </ul>
+                <p>Reserva tu lugar aquí debajo, completando los datos requeridos y luego haciendo "Click" en Inscribirse.</p>
+        </div>
+        <form id="form_inscrip" autocomplete="off">
+            <div id="campos">
+                Profesional/Aficionado
+                <select id="nivel" required>
+                    <option></option>
+                    <option>Profecional</option required>
+                    <option>Aficionado</option>
+                </select>
+                Nombre
+                <input type="text" id="nombre" required>
+                Apellido
+                <input type="text " id="apellido" required>
+            </div>
+            <div id="campos2">
+                Correo electronico
+                <input type="email" id="email" required>
+                Telefono
+                <input type="number" id="telefono" required>
+            </div>
+        </form>
+        <p id="mensaje_incompleto"></p>
+
+        <button class="botones" id="cargarPerfil">Inscribirse</button>
+        <button class="botones" id="ejemplo">Ejemplo</button><br>
+        <button class="botones botonborrar" id="borrar_todo">Borrar todo</button><br><br>
+
+        <select id="filtro">
+            <option></option>
+            <option>Profecional</option>
+            <option>Aficionado</option>
+        </select>
+        <button id="filtrar" class="botones">Filtrar</button><br><br>
+        <div id="tablaScroll">
+        <table id="tabla">
+            <thead class="headtabla">
+                <tr> 
+                    <td>Nivel</td>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Correo electronico</td>
+                    <td>Telefono</td>
+                    <td>Editar</td>
+                    <td>Eliminar</td>
+                </tr>
+            </thead>
+            <tbody id="contTabla">
+            </tbody>    
+        </table>
+        </div><br>
+        <div class="instrucciones">
+        <h2>Si desea editar los datos enviados, hagalo a continuación:</h2>
+        <p>Elejir la fila a modificar y presionar el boton editar. Luego
+            completar todos los campos del formulario y finalmente 
+            presione el boton Enviar.
+        </p>
+        <h3 id="filaEditar"></h3>
+        </div>
+
+        <form id="form_inscrip" autocomplete="off">
+            <div id="campos">
+                <input type="text " id="idObjeto" required>
+                Nombre
+                <input type="text" id="nombreModif" required>
+                Apellido
+                <input type="text " id="apellidoModif" required>
+            </div>
+            <div id="campos2">
+                    Profecional/Aficionado
+                    <select id="nivelModif" required>
+                        <option></option>
+                        <option>Profecional</option>
+                        <option>Aficionado</option>
+                    </select>
+                Correo electronico
+                <input type="email" id="emailModif" required>
+                Telefono
+                <input type="number" id="telefonoModif" required>
+            </div>
+            </form>
+            <p id="alerta_incompleto"></p>
+            <button class="botones" id="cargarEdicion">Enviar </button>
+    </div>
+    </main>
+    <footer class="piepagina">
+            <div class="contenedor">
+                <h4>Diseño: Joaquin Loiza - Marcela Aguirre. &copy;2019.</h4>
+            </div>
+    </footer>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/desplegar_menu.js"></script>
+        <script src="js/formulario_inscripcion.js"></script>
+    </body>
+    
+</html>

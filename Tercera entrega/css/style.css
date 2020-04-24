@@ -1,0 +1,518 @@
+@font-face {
+    font-family: SUBSCRIBER; src: url(font/SUBSCRIBER-Regular.otf);
+}
+
+body {
+    font-family: monospace, Courier, 'Courier New'; 
+}   
+.contenedor {
+    width: 90%;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    font-family: SUBSCRIBER; 
+}
+
+/*Comienzo de Header*/
+.encabezado {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 20px;
+
+}
+.encabezado a {
+    text-decoration: none;
+    color: black;
+    font-family: SUBSCRIBER;
+    letter-spacing: 3px;
+    font-size:25px;
+}
+.logo-nav {
+    border-bottom: 2px solid #c76c6d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 300px;
+}
+.desplegable {
+    display: none;
+}
+.desplegable img {
+    padding-right: 30%;
+    width: 30px;
+}
+  /*Barra de navegacion*/
+.barnav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.barnav ul li {
+    display: inline-block;
+}
+.barnav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+}
+.barnav ul li a:hover {
+    color:#ee4a4a;
+    font-size: 200%;
+}
+/*fin de Header*/
+
+.contenido {
+    padding-top: 7rem;
+}
+.portada img {
+    padding-top: 3rem;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.contenedorpubli {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(to top, #4c4449, #ca6071);
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 11px 11px 5px 0px rgba(0,0,0,0.29);
+}
+.seminario {
+    width: 60%;
+}
+.botoninscribirse {
+    width: 40%;
+}
+.botoninscribirse button {
+    color: white;
+    letter-spacing: 2.5px;
+    font-size: 120%;
+    font-family: SUBSCRIBER;
+    width: 45%;
+    height: auto;
+    background-color: rgb(180, 56, 56);
+    box-shadow: none;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.seminario h2 {
+    color: white;
+    padding-left: 3rem;
+    font-weight: normal;
+    margin: 4px;
+    font-size: 35px;
+}
+.titulo {
+    height: auto;
+    text-align: center;
+    letter-spacing: 4px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.cuerpo {
+    width: 100%;
+    height: auto;
+}
+.imagebio {
+    float: left;
+    margin-right: 3%;
+}
+.biografia {
+    width: 100%;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 35px;
+}
+.piepagina {
+    width: 0 auto;
+    height: 60px;
+    display: block;
+    clear: both;
+    padding-top: 8%;
+}
+.piepagina h4 {
+    font-size: 10px;
+    color:gray;
+    text-align: center;
+}
+
+.contenido h2 {
+    letter-spacing: 4px;
+}
+.contenedor{
+    text-align: center;
+    margin-top: 0;
+}
+.titulo_precio {
+    margin-top: 10px;
+}
+
+#precios, #precios tr, #precios th {
+    margin: auto;
+    border-spacing: 0px 0px;
+    border: solid 1px black;
+    font-size: 15px;
+}
+.tabla {
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #e46a6a;
+}
+#columna1 {
+    background-color:#e46a6a;
+}
+
+.observaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+.contactos, .formu {
+    box-shadow: 11px 11px 5px 0px rgba(0,0,0,0.29);
+    background: linear-gradient(to bottom, #485563, #29323c); 
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.contactos h2 {
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+.contactos h3 {
+    font-weight: normal;
+    color: white;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 18px;
+}
+#ultimoicon {
+    padding-bottom: 18px; 
+}
+
+#formulario {
+    color: white;
+    text-align: center;
+    font-family: SUBSCRIBER;
+    letter-spacing: 2.5px;
+    font-size: 20px; 
+}
+#formulario input {
+    color: white;
+    background-color: #ffffff0a;
+    height: 25px;
+    width: 80%;
+    padding-left: 10px; 
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 2px solid rgb(179, 179, 179);   
+}
+#formulario button {
+    color:white;
+    letter-spacing: 2.5px;
+    font-size: 20px; 
+    font-family: SUBSCRIBER;
+    width: 45%;
+    height: 30px;
+    background-color:rgb(195, 16, 78);
+    box-shadow: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#consulta {
+    resize: none;
+    height: 90px;
+    width: 80%;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    background-color: #ffffff0a;
+    color: white;
+}
+#envioexitoso {
+    padding-top: 10rem;
+    color: #ee4a4a;
+    letter-spacing: 3px;
+}
+#tabla {
+    margin: auto;
+}
+.seminariotandil h1 {
+    letter-spacing:2px;
+}
+.infoseminario {
+    width: 70%;
+    text-align:justify;
+    margin: auto;
+}
+.infoseminario ul {
+    padding: 2.5%;
+}
+#tabla, #tabla tr, #tabla td {
+    border-spacing: 0px 0px;
+    border: solid 1px black;
+    font-size: 17px;
+}
+#mensaje_incompleto , #alerta_incompleto {
+    font-family: SUBSCRIBER;
+    color: #ee4a4a;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+}
+#form_inscrip {
+    box-shadow: 11px 11px 5px 0px rgba(0,0,0,0.29);
+    background: linear-gradient(to bottom, #485563, #29323c); 
+    border-radius: 10px;
+    width: 70%;
+    margin: 3% auto 3% auto;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    font-family: SUBSCRIBER;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: normal;
+    font-size: 140%;
+}
+#form_inscrip input, #form_inscrip select {
+    margin: 2% 20% 2% 20%;
+    color: white;
+    padding-left: 10px; 
+    background-color: #ffffff0a;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 2px solid rgb(179, 179, 179);
+}
+#form_inscrip select option {
+    background-color: rgb(71, 82, 95);
+    border-radius: 8px;
+}
+#campos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#campos2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.botones {
+    color: white;
+    letter-spacing: 2.5px;
+    font-size: 17px;
+    font-family: SUBSCRIBER;
+    width: 12%;
+    height: auto;
+    background-color: rgb(206, 55, 55);
+    box-shadow: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.botonborrar {
+    margin-top: 8px;
+    width: 25%;
+}
+.headtabla {
+    background-color: #e46a6a;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#idObjeto {
+    visibility: hidden;
+}
+
+/* RESPONSIVE */
+
+
+@media only screen and (max-width: 900px){
+    
+    #form_inscrip {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #campos, #campos2 {
+        margin: auto;
+    }
+    #form_inscrip input{
+        margin: 2% 10% 2% 10%;
+    }
+    .encabezado {
+        text-align: center;
+    }
+    .contenido {
+        padding-top: 5.7rem;
+    }
+    .logo {
+        width: 180px;
+    }
+    .desplegable {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .desplegable img {
+        width: 30px;
+    }
+    .seminario h2 {
+        font-size: 28px;
+    }    
+    .imagebio {
+        width: 30%;
+    }
+    .barnav {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .barnav ul {
+        display: none;
+    }
+    .barnav ul.mostrar {
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, 
+        rgb(249, 249, 249) 47%, rgb(236, 236, 236) 100%);
+        display: block;
+        border-bottom: 1px solid #c76c6d;     
+    }
+    .barnav ul li {
+        display: block;
+    }
+    .barnav ul li a {
+        display: block;
+        padding: 10px;                      
+    }
+    .botones {
+        font-size: 80%;
+    }
+    #tablaScroll {
+        width: auto;
+        overflow-x: scroll;
+    }
+    #tablaScroll::-webkit-scrollbar {
+        background-color: gray;
+        color: red;
+    }
+
+    #tablaScroll::-webkit-scrollbar {
+      width: 14px;
+      height: 14px;
+    }
+    #tablaScroll::-webkit-scrollbar-button {
+      width: 12px;
+      height: 12px;
+    }
+    #tablaScroll::-webkit-scrollbar-thumb {
+      background: #ee4a4a;
+      border: 0px none #ffffff;
+      border-radius: 50px;
+    }
+    #tablaScroll::-webkit-scrollbar-track {
+      background: #666666;
+      border: 0px none #ffffff;
+      border-radius: 50px;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .logo {
+        width: 150px;
+    }
+    .contenido {
+        padding-top: 5rem;
+    }
+    .encabezado a {
+        font-size:18px;
+    }
+    .desplegable img {
+        width: 25px;
+    }
+    .seminario {
+        width: 100%;
+    }
+    .botoninscribirse {
+        width: 100%;
+    }
+    .botoninscribirse button {
+        width: 30%;
+    }
+    .seminario h2 {
+        padding-left: 0;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .infoseminario, .instrucciones{
+        font-size: 80%;
+    }
+    .seminariotandil {
+        font-size: 70%;
+    }
+    .titulo {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+    .biografia {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .piepagina h4 {
+        font-size: 8px;
+    }
+    #precios th {
+        font-size: 10px;
+    }
+    .titulo_precio {
+        font-size: 22px;
+    }
+    .titulo_observaciones {
+        font-size: 18px;
+    }
+    .observaciones li {
+        font-size: 11px;
+    }
+    .contactos, .formu {
+        width: 280px;
+    }
+    .contactos h2 {
+        font-size: 18px; 
+    }
+    .contactos h3 {
+        font-size: 15px;
+    }
+    #formulario {
+        font-size: 15px;
+    }
+    #formulario button{
+        font-size: 13px;
+    }
+    .botones {
+        font-size: 11px;
+        width: 22%;
+    }
+    #tabla, #tabla tr, #tabla td {
+        font-size: 11px;
+    }
+    #form_inscrip {
+        font-size: 15px;
+    }
+}

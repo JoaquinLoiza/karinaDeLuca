@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Karina De Luca</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icon/iconsocialnetworks.css">
+    <link rel="shorcut icon" type="image/x-icon" href="image/icono.png">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor logo-nav">
+			<a href="index.html">
+                <img class="logo" src="image/logo.png" alt="logo">
+            </a>
+            <span class="desplegable">
+                <img src="image/desplegable.png" alt="#" >
+            </span>
+            <nav class="barnav">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="precios.html">PRECIOS</a></li>
+                    <li><a href="contactos.html">CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenido">
+        <div class="contenedor">
+
+            <div class="contactos">
+            <h2>~ CONTACTOS ~</h2>
+            <h3><span class="icon-envelop"></span>&nbsp;: karina_photographer@gmail.com</h3>
+            <h3><span class="icon-whatsapp"></span>&nbsp;: +54 011-70539933</h3>
+            <h3><span class="icon-instagram"></span>&nbsp;: Karina De Luca</h3>
+            <h3 id="ultimoicon"><span class="icon-facebook2"></span>&nbsp;: KarinaDL</h3>
+            </div>
+            <div class="formu">
+                <form  id="formulario" autocomplete="off" action="envioexitoso.html"><br>
+                    
+                    Nombre<br> <input type="text" id="nombre" required><br><br>
+                    Apellido<br> <input type="text" id="apellido" required><br><br>
+                    Email<br> <input type="email" id="email" placeholder="ejemplo@gmail.com" required><br><br>
+                    Consulta<br> <textarea  placeholder="Escriba su consulta" id="consulta" required></textarea><br><br>
+                    <img id="img_aleatoria" src="#" ><br><br>
+                    Ingresar captcha  &nbsp; <input id="captcha" type="text" required><br><br>
+                    <button id="enviar">Enviar Consulta</button><br><br>
+
+                </form>                
+            </div>
+        </div>
+    </main>
+
+    <footer class="piepagina">
+        <div class="contenedor">
+            <h4>Diseño: Joaquin Loiza - Marcela Aguirre. &copy;2019.</h4>
+        </div>
+    </footer>
+    <script src="js/formulario_contacto.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/desplegar_menu.js"></script>
+</body>
+
+</html>
